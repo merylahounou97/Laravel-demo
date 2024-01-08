@@ -1,0 +1,50 @@
+body {
+    background-color: #122a2d; 
+    color: rgb(210, 174, 174); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid #fff; */
+    /* width: 60%; */
+    background-image: url('https://img.freepik.com/photos-premium/logo-dessin-anime-motocross_643934-2677.jpg');
+    background-size: cover; /* Ajuste la taille de l'image pour remplir toute la zone */
+    background-position: center; /* Centre l'image */
+    
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgb(149, 176, 178);
+    color: black;
+    /* width: 100%; */
+}
+
+
+.list-group-item {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+a {
+    margin: 15px;
+}
+
+
+#content {
+    background-color: rgb(108, 55, 49);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+}
+
+
+.background-img {
+    /* Définir l'image en arrière-plan */
+    background-image: url('https://e0.pxfuel.com/wallpapers/530/752/desktop-wallpaper-style-motocross-background.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour remplir toute la zone */
+    background-position: center; /* Centre l'image */
+}
