@@ -27,6 +27,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'mezatsong/laravel-swagger-docs' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mezatsong\\SwaggerDocs\\SwaggerServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 

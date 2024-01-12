@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
-        Schema::table('users', function (Blueprint $table) {
-            $table->enum('role', ['admin', 'user'])->default('user');
-            $table->text('picture')->nullable();
+        Schema::create('trainings', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->integer('length');
+            $table->integer('max_people');
+            $table->enum('type', ['enfant', 'adulte']);
+            $table->timestamps();
         });
     }
 
@@ -23,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('training');
     }
 };

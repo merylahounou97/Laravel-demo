@@ -43,3 +43,11 @@ Route::get(
         'delete'
     ]
 )->name('users.delete');
+
+Route::post(
+    "/users",
+    [
+        UserController::class,
+        'store'
+    ]
+)->name('users.store');

@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
-        Schema::table('users', function (Blueprint $table) {
-            $table->enum('role', ['admin', 'user'])->default('user');
-            $table->text('picture')->nullable();
+        Schema::create('schedules', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->foreignId('id_trainings')->constrained('trainings')->onDelete('cascade');
+            $table->dateTime('start_hour');
+            $table->dateTime('end_hour');
         });
     }
 
@@ -23,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('schedules');
     }
 };

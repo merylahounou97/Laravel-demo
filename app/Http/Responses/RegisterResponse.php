@@ -8,6 +8,6 @@ class RegisterResponse implements RegisterResponseContract
 {
     public function toResponse($request)
     {
-        return redirect('/dashboard');
+        return redirect()->route('users.index_web');;
     }
 }

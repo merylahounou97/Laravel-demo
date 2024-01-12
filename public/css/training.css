@@ -1,50 +1,139 @@
 body {
-    background-color: #122a2d; 
-    color: rgb(210, 174, 174); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* border: 2px solid #fff; */
-    /* width: 60%; */
-    background-image: url('https://img.freepik.com/photos-premium/logo-dessin-anime-motocross_643934-2677.jpg');
-    background-size: cover; /* Ajuste la taille de l'image pour remplir toute la zone */
-    background-position: center; /* Centre l'image */
-    
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+    background-image: url('https://st5.depositphotos.com/13897084/64791/i/450/depositphotos_647915538-stock-photo-motocross-sport-rider-dirt-background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
-h1 {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
     text-align: center;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: rgb(149, 176, 178);
-    color: black;
-    /* width: 100%; */
 }
 
+/* Styles pour la section Users */
+header {
+    background-color: #4b5563; /* Vous pouvez changer la couleur selon vos préférences */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Styles pour les formulaires */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond du formulaire légèrement transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form button {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Styles pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond du tableau légèrement transparent */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #e5e7eb;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styles pour les liens et boutons */
+a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4b5563;
+}
+
+.btn-primary:hover {
+    background-color: #374155;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ef4444;
+}
+
+.btn-danger:hover {
+    background-color: #d64545;
+}
+
+/* Styles pour les boutons Modifier et Supprimer */
+.btn-warning,
+.btn-danger {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Ajout d'une marge entre les boutons */
+}
+
+/* Ajustez la taille des images de profil */
+.users img {
+    width: 100px; /* ou toute autre taille souhaitée */
+    height: 100px; /* ou toute autre taille souhaitée */
+    object-fit: cover; /* Ajuste la taille de l'image tout en conservant les proportions */
+    border-radius: 50%; /* Pour créer une forme circulaire */
+}
 
 .list-group-item {
-    border: 1px solid #fff;
-    border-radius: 5px;
+    position: relative;
 }
 
-a {
-    margin: 15px;
-}
-
-
-#content {
-    background-color: rgb(108, 55, 49);
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 400px;
-    padding: 20px;
-}
-
-
-.background-img {
-    /* Définir l'image en arrière-plan */
-    background-image: url('https://e0.pxfuel.com/wallpapers/530/752/desktop-wallpaper-style-motocross-background.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* Ajuste la taille de l'image pour remplir toute la zone */
-    background-position: center; /* Centre l'image */
-}
